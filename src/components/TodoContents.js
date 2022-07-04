@@ -1,7 +1,15 @@
+import styled from 'styled-components';
+
+let ContentBox = styled.div`
+    padding:20px 0;
+    border:1px solid #000;
+    border-width:0 1px;
+`;
+
 function TodoContents(props){
-    
+
     return(
-        <div>
+        <ContentBox>
             {
                 props.todos.map(function(v, i, arr){
                     return(
@@ -13,7 +21,7 @@ function TodoContents(props){
                     )
                 })
             }
-        </div>
+        </ContentBox>
     )
 }
 
