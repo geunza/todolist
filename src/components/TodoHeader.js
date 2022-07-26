@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-
+import logo from '../'
 let Header = styled.div`
-  background:#000;
-  padding:20px;
-  border:1px solid #000;
-  border-radius:10px 10px 0 0;
-  color:#fff;
+  background:#fff;
+  padding:30px 0 20px;
+  color:#191919;
+  position:relative; 
   .title{
-    font-size:16px; margin-bottom:5px; font-weight:700;
+    font-size:20px; margin-bottom:5px; font-weight:700;
+    .logo{width:60px; display:block; margin:auto; }
     + p{
-      display:flex; justify-content:flex-end; align-items:center; 
+      position:absolute; right:20px; top:50%; transform:translateY(-50%);
       font-size:14px;
       span{
         margin-right:5px; 
@@ -22,7 +22,9 @@ let Header = styled.div`
 function TodoHeader(props){
     return(
         <Header>
-        <h2 className="title">TodoList</h2>
+        <h2 className="title">
+          <img className="logo" src={`${process.env.PUBLIC_URL}/images/todolist_logo.png`} alt="todolist logo" />
+        </h2>
         <p className="remain">
             <span>{props.todos.length}</span>개 남음
         </p>

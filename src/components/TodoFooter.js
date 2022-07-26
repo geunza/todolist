@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 let Footer = styled.div`
-    background:#282c34;
-    padding:20px 0;
-    border:1px solid #000;
-    border-radius:0 0 10px 10px;
+    background:#fff;
+    padding:25px 0;
     p{
-      font-size:12px; color:#fff; 
+      font-size:12px; color:#191919; 
     }
 `;
 
