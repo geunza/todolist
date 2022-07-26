@@ -1,12 +1,12 @@
 
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', 'Roboto', 'Oxygen',
+  font-family: 'Pretendard', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #6a6a6a;
+  background: #bbbbbb;
 }
 
 code {
