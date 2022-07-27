@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import logo from '../'
 let Header = styled.div`
   background:#fff;
-  padding:30px 0 20px;
+  padding:20px 0 10px;
   color:#191919;
   position:relative; 
   .title{
     font-size:20px; margin-bottom:5px; font-weight:700;
-    .logo{width:60px; display:block; margin:auto; }
+    .logo{width:50px; display:block; margin:auto; }
     + p{
       position:absolute; right:20px; top:50%; transform:translateY(-50%);
       font-size:14px;
