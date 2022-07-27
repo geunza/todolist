@@ -80,6 +80,7 @@ function TodoContents(props){
     let copy = [...props.todos];
     copy.push(obj);
     props.setTodos(copy)
+    localStorage.setItem('todoList', JSON.stringify(copy));
   }
     return(
         <ContentBox>
@@ -118,6 +119,7 @@ function Cont(props){
                   let idx = i;
                   copy.splice(idx, 1);
                   props.setTodos(copy);
+                  localStorage.setItem('todoList', JSON.stringify(copy));
                 } }>remove</button></li>
               </ul>
             )

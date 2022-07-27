@@ -9,7 +9,11 @@ import data from './data/data.js';
 
 
 function App() {
-  let [todos, setTodos] = useState(data);
+  let list = data;
+  if(window.localStorage.getItem('todoList') != null){
+    list = JSON.parse(window.localStorage.getItem('todoList'));
+  }
+  let [todos, setTodos] = useState(list);
   return (
     <div className="App">
       <TodoHeader todos={todos}/>
